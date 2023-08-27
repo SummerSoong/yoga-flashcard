@@ -1,0 +1,77 @@
+/* The flip card container - set the width and height to whatever you want.
+We have added the border property to demonstrate that the flip itself goes out of the box on hover
+(remove perspective if you don't want the 3D effect */
+.flip-card {
+  perspective: 1000px;
+  /* Remove this if you don't want the 3D effect */
+  width: 300px;
+  height: 300px;
+  margin: 24px auto;
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+
+  background-color: #fff;
+  border-radius: 8px;
+  margin: 24px auto;
+  box-shadow: 8px 8px 32px rgba(0, 0, 0, 0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  /* Safari */
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  border-radius: 8px;
+  height: 300px;
+  width: 300px;
+  margin: 32px auto;
+  box-shadow: 8px 8px 32px rgba(0, 0, 0, 0.15);
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.flip-card-back {
+  font-family: Overpass;
+  color: #404042;
+  transform: rotateY(180deg);
+
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.Sanskrit-spelling {
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+.Japanese-pronounciation {
+  margin-top: 0;
+}
+
+.English {
+  font-weight: bold;
+}
