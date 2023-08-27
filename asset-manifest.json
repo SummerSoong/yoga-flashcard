@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/yoga-flashcard/static/css/main.8b8d2b07.css",
+    "main.js": "/yoga-flashcard/static/js/main.2c6843f8.js",
+    "index.html": "/yoga-flashcard/index.html",
+    "main.8b8d2b07.css.map": "/yoga-flashcard/static/css/main.8b8d2b07.css.map",
+    "main.2c6843f8.js.map": "/yoga-flashcard/static/js/main.2c6843f8.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8b8d2b07.css",
+    "static/js/main.2c6843f8.js"
+  ]
+}
